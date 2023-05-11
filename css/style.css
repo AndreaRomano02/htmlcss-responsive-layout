@@ -103,6 +103,20 @@ header{
 
 /** Benefits */
 
+/** Get Started */
+#get-started{
+  color: #fff;
+  text-align: center;
+}
+
+/*! Footer */
+footer{
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 50px 0;
+}
+
 
 /*! Responsive */
 @media screen and (min-width: 768px){
@@ -154,6 +168,11 @@ header{
 
   }
 
+  #get-started .container,
+  footer .container{
+  padding: 0 75px;
+  }
+
 }
 
 @media screen and (min-width: 992px) {
@@ -194,5 +213,10 @@ header{
 @media screen and (min-width: 1200px){
   .container{
     max-width: 1200px;
+  }
+
+  #get-started .container,
+  footer .container{
+  padding: 0 150px;
   }
 }
