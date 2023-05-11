@@ -25,6 +25,10 @@ a{
   color: currentColor;
 }
 
+p{
+  line-height: 28px;
+}
+
 section{
   margin-bottom: 100px;
 }
@@ -36,7 +40,7 @@ section:nth-child(even){
 
 section:nth-child(even) .card{
   background-color: #fff;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .equal-col{
@@ -47,6 +51,12 @@ section:nth-child(even) .card{
   font-size: 1.5rem;
   font-weight: bold
 }
+
+.title-section{
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
 /*! Buttons */
 .btn{
   padding: 8px 15px;
@@ -80,6 +90,7 @@ header{
 
 .nav-upper-tablet ul{
   display: flex;
+  align-items: center;
   gap: 20px;
   font-size: 1.1rem;
 }
@@ -124,7 +135,6 @@ header{
 #description p{
   font-size: 17px;
   font-weight: bold;
-  line-height: 28px;
   margin-top: 30px;
 }
 
@@ -154,7 +164,44 @@ header{
 }
 
 /** Strategic */
+#strategic .left{
+  color: #fff;
+}
 
+#strategic img{
+  max-width: 100%;
+}
+
+#strategic .card{
+  border-radius: 50px;
+}
+
+#strategic .right{
+  text-align: center;
+  align-self: flex-end;
+}
+
+#strategic .left img{
+  margin-bottom: 140px;
+}
+
+#strategic .right img{
+  margin-bottom: 20px;
+}
+
+#strategic .right p{
+  margin: 30px 0;
+  font-style: italic;
+}
+
+#strategic button{
+  background-color: #9792E4;
+  border: none;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+}
 
 /** Testimonials */
 #testimonials{
@@ -209,6 +256,11 @@ footer{
 
   #description img{
     max-width: 60%;
+  }
+
+  /*? Strategic */
+  #strategic .title-section{
+    font-size: 4rem;
   }
 
   /*? Testimonials */
@@ -277,12 +329,29 @@ footer{
 
 
   /*? Strategic */
+  #strategic .title-section{
+    font-size: 2rem;
+  }
+
+  #strategic .equal-col{
+    flex-basis: 35%;
+  }
+
   #strategic .card{
     margin-top: 0;
   }
  
   #strategic>div:first-child{
     display: flex;
+    justify-content: center;
+  }
+
+  #strategic .right{
+    margin-left: 80px;
+  }
+
+  #strategic .right img{
+    max-width: 70%;
   }
 
   /*? Benefits */
