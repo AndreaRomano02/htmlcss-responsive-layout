@@ -20,6 +20,11 @@ ul{
   list-style-type: none;
 }
 
+a{
+  text-decoration: none;
+  color: currentColor;
+}
+
 section{
   margin-bottom: 100px;
 }
@@ -32,6 +37,12 @@ section:nth-child(even){
 section:nth-child(even) .card{
   background-color: #fff;
   margin-top: 20px;
+}
+
+/*! Buttons */
+.btn{
+  padding: 8px 15px;
+  border-radius: 20px;
 }
 
 /*! Header */
@@ -53,18 +64,22 @@ header{
 }
 
 .logo{
-  height: 50px;
-  width: 100px;
-  background-color: lightblue;
+  max-width: 100%;
 }
 
-.header-nav ul{
+.nav-upper-tablet ul{
   display: flex;
   gap: 20px;
+  font-size: 1.1rem;
 }
 
 .nav-upper-tablet{
   display: none;
+}
+
+.nav-upper-tablet .btn{
+  background-color: #fff;
+  color: black;
 }
 
 /*! Main */
