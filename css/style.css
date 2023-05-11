@@ -61,7 +61,7 @@ header{
   border-radius: 20px;
   width: 100%;
   text-align: center;
-  margin: 20px 0;
+  
   min-height: 400px;
 }
 
@@ -69,6 +69,7 @@ header{
 
 #description .card{
   background-color: #B5DDFF;
+  margin-bottom: 20px;
 }
 
 /** Strategic */
@@ -78,19 +79,28 @@ header{
   padding: 50px 0;
 }
 
-.large-col{
+.equal-col{
   min-height: 400px;
   border: 1px dashed black;
 }
 
 #strategic .card{
   background-color: #fff;
+  margin-top: 20px;
 }
 
 /*! Responsive */
 @media screen and (min-width: 992px){
   .container{
     max-width: 900px;
+  }
+
+  #strategic .card{
+    margin-top: 0;
+  }
+ 
+  #description .card{
+    margin-bottom: 0;
   }
 
   /*? Header */
@@ -106,17 +116,26 @@ header{
   .row{
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -20px;
+    margin: 0 -10px;
   }
 
   .col{
-    padding: 20px;
+    padding: 10px;
     flex-basis: calc(100% / 3);
     flex-grow: 1;
   }
 
   #description .col:first-child{
     flex-basis: 60%;
+  }
+
+  /*? Strategic */
+  #strategic div:first-child{
+    display: flex;
+  }
+
+  .equal-col{
+    flex-basis: 50%;
   }
 }
 
