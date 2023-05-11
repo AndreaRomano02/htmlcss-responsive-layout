@@ -138,6 +138,22 @@ header{
     flex-basis: 50%;
   }
 
+  /*? About Us */
+  #about-us>div:first-child{
+    display: flex;
+  }
+
+  .large-col{
+    flex-basis: 70%;
+    border: 1px dashed black;
+  }
+
+  .small-col{
+    flex-basis: 30%;
+    border: 1px dashed black;
+
+  }
+
 }
 
 @media screen and (min-width: 992px) {
@@ -159,7 +175,7 @@ header{
     margin-top: 0;
   }
  
-  #strategic div:first-child{
+  #strategic>div:first-child{
     display: flex;
   }
   
